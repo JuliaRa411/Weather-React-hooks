@@ -3,10 +3,10 @@
 
 
 
- .app{
+ .container{
    display: flex;
    justify-content: center;
-    
+    margin-top: 50px;
  }
 
  .search {
@@ -42,4 +42,15 @@
    margin-left: 0px;
    box-shadow: inset 0px 0px 0px 4px #ddd6e8;
 
+}
+
+button{
+  font-size: 14px;
+ padding: 12px 45px; 
+ margin-left: 60px;
+ background-color:  #ddd6e8;
+ color: #575756;
+  background-color: transparent;
+  
+   box-shadow: inset 0px 0px 0px 4px #ddd6e8;
 }
