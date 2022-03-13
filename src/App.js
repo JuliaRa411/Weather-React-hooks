@@ -64,11 +64,7 @@ import './App.css';
            </div>
            <div className="description">
        
-
-
-           <div className="info">
-            <img
-              className="city-icon"
+            <img className="city-icon"
               src={`http://openweathermap.org/img/wn/04n@2x.png/${data.weather[0][`icon`]}@2x.png`}
               alt={data.weather[0].icon}
             />
@@ -111,7 +107,7 @@ import './App.css';
 
 
 </div>
-</div>
+ 
 
 
    );
