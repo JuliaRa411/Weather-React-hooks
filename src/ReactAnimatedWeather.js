@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import Skycons from './skycons';
+import ReactAnimatedWeather from 'ReactAnimatedWeather';
 
 function setIcon(icon, animate, skyconIcon, canvas) {
   skyconIcon.add(canvas, Skycons[icon]);
