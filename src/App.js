@@ -30,25 +30,26 @@ import './App.css';
            value={location}
            onChange={event => setLocation(event.target.value)}
            onKeyPress={searchLocation}
-           placeholder='Enter location'
+           placeholder='Enter city'
            type="text" />
        
        </div>
        <div className="container">
          <div className="top">
          
-          <div className="location"> <p>{new Date().toDateString("en-US")}</p> 
+          <div className="location"> <p>{new Date().toDateString("en-US")}  </p> 
        
      
           </div>
           <div className="location">
-          <p>{new Date().toLocaleTimeString()  }</p>
+          <p>{new Date().toLocaleTimeString()}</p>
+       
           </div>
           {/* Date */}
          
 
            <div className="location">
-             <p>{data.name}</p>
+             <p className="name">{data.name}</p>
            
            </div>
 
@@ -63,14 +64,18 @@ import './App.css';
            
            </div>
            <div className="description">
-       
-            <img className="city-icon"
-              src={`http://openweathermap.org/img/wn/04n@2x.png/${data.weather[0][`icon`]}@2x.png`}
+
+
+        
+              <img className="city-icon"
+              src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
               alt={data.weather[0].icon}
             />
               <p>{data.weather[0].icon}</p>
+      
         
-           
+
+ 
 
  </div>
          {data.name !== undefined &&
