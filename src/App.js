@@ -5,16 +5,17 @@
  
  
 import './App.css';
-import ReactAnimatedWeather from 'react-animated-weather/build/ReactAnimatedWeather';
+ 
+ 
  
 
 
  function App() {
    const [data, setData] = useState([])
    const [location, setLocation] = useState('')
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=895284fb2d2c50a520ea537456963d9c`
  
-   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=895284fb2d2c50a520ea537456963d9c`
- 
+   
    const searchLocation = (event) => {
      if (event.key === 'Enter') {
        axios.get(url).then((response) => {
@@ -47,8 +48,10 @@ import ReactAnimatedWeather from 'react-animated-weather/build/ReactAnimatedWeat
            <div className="location">
              <p>{data.name}</p>
            </div>
+
+            
           
-     <ReactAnimatedWeather/>
+ 
  
            <div className="temp">
              {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
