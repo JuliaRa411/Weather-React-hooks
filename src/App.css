@@ -21,7 +21,7 @@ h1 {
   height: 100vh;
   position: relative;
   background-color: rgba(0,0,0,0.4);
-  background: url('background.jpg') no-repeat center center/cover;
+  background: url('bg.jpg') no-repeat center center/cover;
    
 }
 
@@ -45,7 +45,7 @@ h1 {
   font-size: 1.2rem;
   border-radius: 25px;
   border: 1px solid rgba(255,255,255, 0.8);
-  background: rgba(122, 115, 115, 0.171);
+  background: rgba(122, 115, 115, 0.863);
   color: #f8f8f8;
   text-align: center;
   outline: none;
@@ -66,7 +66,7 @@ h1 {
   justify-content: center;
   flex-direction: column;
   justify-content: space-between;
-  background: rgba(122, 115, 115, 0.171);
+  background: rgba(122, 115, 115, 0.637);
   border-radius: 12px;
   
 }

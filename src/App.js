@@ -6,10 +6,7 @@
  
 import './App.css';
  
- 
- 
-
-
+  
  function App() {
    const [data, setData] = useState([])
    const [location, setLocation] = useState('')
@@ -41,6 +38,11 @@ import './App.css';
          <div className="top">
          
           <div className="location"> <p>{new Date().toDateString("en-US")}</p> 
+       
+     
+          </div>
+          <div className="location">
+          <p>{new Date().toLocaleTimeString()  }</p>
           </div>
           {/* Date */}
          
@@ -61,8 +63,19 @@ import './App.css';
            
            </div>
            <div className="description">
-           <img  src="http://openweathermap.org/img/wn/10d@2x.png" alt="second-hour-conditions"/>
-         </div>
+       
+
+
+           <div className="info">
+            <img
+              className="city-icon"
+              src={`http://openweathermap.org/img/wn/04n@2x.png/${data.weather[0][`icon`]}@2x.png`}
+              alt={data.weather[0].icon}
+            />
+              <p>{data.weather[0].icon}</p>
+        
+           
+
  </div>
          {data.name !== undefined &&
            <div className="bottom">
@@ -97,7 +110,8 @@ import './App.css';
      </div>
 
 
-
+</div>
+</div>
 
 
    );
