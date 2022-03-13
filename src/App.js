@@ -47,13 +47,10 @@ import './App.css';
 
            <div className="location">
              <p>{data.name}</p>
+           
            </div>
 
-            
-          
- 
- 
-           <div className="temp">
+                   <div className="temp">
              {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
              
 
@@ -61,9 +58,12 @@ import './App.css';
         
            <div className="description">
              {data.weather ? <p>{data.weather[0].main}</p> : null}
+           
            </div>
+           <div className="description">
+           <img  src="http://openweathermap.org/img/wn/10d@2x.png" alt="second-hour-conditions"/>
          </div>
- 
+ </div>
          {data.name !== undefined &&
            <div className="bottom">
              <div className="feels">
