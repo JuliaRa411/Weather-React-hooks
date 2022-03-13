@@ -2,7 +2,12 @@
 
  import React, { useState } from 'react'
  import axios from 'axios'
- import './App.css';
+ 
+ 
+import './App.css';
+import ReactAnimatedWeather from 'react-animated-weather/build/ReactAnimatedWeather';
+ 
+
 
  function App() {
    const [data, setData] = useState([])
@@ -18,8 +23,7 @@
        })
        setLocation('')
      }
-   }
- 
+    }
    return (
      <div className="app">
        <div className="search">
@@ -43,10 +47,15 @@
            <div className="location">
              <p>{data.name}</p>
            </div>
-           
+          
+     <ReactAnimatedWeather/>
+ 
            <div className="temp">
              {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
+             
+
            </div>
+        
            <div className="description">
              {data.weather ? <p>{data.weather[0].main}</p> : null}
            </div>
@@ -79,8 +88,18 @@
  
  
        </div>
+       
+
+
      </div>
+
+
+
+
+
    );
+   
+
  }
  
  export default App;
