@@ -65,18 +65,18 @@ import './App.css';
            </div>
            <div className="description">
 
+         
 
-        
-              <img className="city-icon"
-              src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
-              alt={data.weather[0].icon}
+           <img className="city-icon"
+              src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png' alt={data.weather[0].icon}"               
             />
-              <p>{data.weather[0].icon}</p>
-      
-        
+                          
+              
+         
 
  
-
+ 
+ 
  </div>
          {data.name !== undefined &&
            <div className="bottom">
