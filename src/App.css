@@ -137,9 +137,13 @@ main {
    color: white;
     width: 70%;
     margin-top: 50px;
-  }
-   
-  p{
+  } 
+ 
+.placeholder {
+  color: white;
+ 
+}
+     p{
 font-size: 20px;
   }
 
@@ -148,6 +152,41 @@ font-size:30px;
   }
   .name{
     font-size: 25px;
+  }
+  
+  .container {
+    max-width: 300px;
+   
+    margin: auto;}
+
+ 
+.App.cold {
+  background-image: 
+    url("cold-small.jpg") ;
+    min-height: 100vh;
+    transition-duration: 0.5s ease;
+}
+  
+}
+
+
+ 
+@media all and (max-width: 700px) {
+  input {
+   color: white;
+    width: 100%;
+    margin-top: 50px;
+  }
+   
+  p{
+font-size: 20px;
+  }
+
+  h1{
+font-size:35px;
+  }
+  .name{
+    font-size: 30px;
   }
   
   .container {
