@@ -51,11 +51,9 @@
           <Gsap/>  
           
            <div className="location">
-            <p className="name"> {data.name} </p> 
+            <p className="name"> {data.name} {sys}</p> 
              </div>
-             <div className="location">
-            <p className="name"> {sys}</p> 
-             </div>
+             
             <div className="location"> </div>
                    <div className="temp">
              {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
