@@ -1,4 +1,4 @@
- body{
+body{
   margin: 0;
   z-index: 1;
   
@@ -11,25 +11,25 @@
   }
  
 p {
-  font-size: 25px;
+  font-size: 20px;
    color: white;
    font-family: 'Playfair Display', serif; 
    text-shadow: 3px 3px rgba(5, 92, 5, 0.73); }
 
 .name{
-    font-size: 65px;
+    font-size: 35px;
     color: white;
     text-shadow: 3px 3px rgba(5, 92, 5, 0.73);
 }
  h1 {
-  font-size:55px;
+  font-size:35px;
   color: white;
   font-family: 'Playfair Display', serif;
   text-shadow: 3px 3px rgba(5, 92, 5, 0.73);
 }
 
 .top{
-  margin-top: -50px;
+  margin-top: -10px;
 }
 .app {
   width: 100%;
@@ -94,6 +94,7 @@ p {
  .location, .temp, .description{
    display: flex;
    justify-content: center;
+   
  }
 .app .bottom {
   display: flex;
@@ -114,6 +115,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     transition-duration: .2s ease;
+    margin: 0;
 }
 main {
   min-height: 100vh;
@@ -126,7 +128,9 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   transition-duration: .2s ease;
-} 
+  margin: 0;
+}
+ 
  
 @media all and (max-width: 500px) {
   input {
