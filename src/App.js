@@ -5,6 +5,7 @@
  
  
 import './App.css';
+import Gsap from './Gsap';
  
   
  function App() {
@@ -12,8 +13,7 @@ import './App.css';
    const [location, setLocation] = useState('')
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=895284fb2d2c50a520ea537456963d9c`
  
-   
-   const searchLocation = (event) => {
+      const searchLocation = (event) => {
      if (event.key === 'Enter') {
        axios.get(url).then((response) => {
          setData(response.data)
@@ -23,9 +23,20 @@ import './App.css';
      }
     }
    return (
+    <div className={
+      typeof data.main != "undefined"
+                ? data.main.temp > 10
+                  ? "App hot"
+                  : "App cold"
+                  : "App"
+            }
+     > 
+      
+ 
      <div className="app">
+     
        <div className="search">
-         
+      
          <input
            value={location}
            onChange={event => setLocation(event.target.value)}
@@ -34,25 +45,19 @@ import './App.css';
            type="text" />
        
        </div>
+     
        <div className="container">
          <div className="top">
-         
-          <div className="location"> <p>{new Date().toDateString("en-US")}  </p> 
        
-     
-          </div>
-          <div className="location">
-          <p>{new Date().toLocaleTimeString()}</p>
-       
-          </div>
-          {/* Date */}
          
-
+        
+         
+          <Gsap/>  
            <div className="location">
-             <p className="name">{data.name}</p>
-           
-           </div>
-
+             <p className="name">{data.name}    {/*  DISPLAY COUNTRY {data.sys.country}  ???  */}</p> 
+          
+            </div>
+       
                    <div className="temp">
              {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
              
@@ -60,23 +65,25 @@ import './App.css';
            </div>
         
            <div className="description">
+             
              {data.weather ? <p>{data.weather[0].main}</p> : null}
            
            </div>
            <div className="description">
 
-         
+           <div className="weather-icon">
+               
+            </div>
+
+           {/*   Changing weather icons ???
 
            <img className="city-icon"
-              src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png' alt={data.weather[0].icon}"               
+           src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"
+           alt={data.weather[0].icon}                
             />
-                          
-              
-         
-
- 
- 
- 
+               */}
+             
+                 
  </div>
          {data.name !== undefined &&
            <div className="bottom">
@@ -102,19 +109,17 @@ import './App.css';
             </div>
          }
  
- 
+
  
        </div>
        
 
 
      </div>
-
-
+ 
 </div>
  
-
-
+</div>
    );
    
 
