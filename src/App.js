@@ -73,7 +73,7 @@
 
            <div className="weather-icon">
           {/*  Changing weather icons */ }
-  <p> {icon}</p>  <img src={iconUrl} alt ="icon"/> 
+  <p> {icon} <img src={iconUrl} alt ="icon"/> </p> 
           
     </div>
                  
