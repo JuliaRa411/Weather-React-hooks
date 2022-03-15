@@ -42,8 +42,7 @@
            onKeyPress={searchLocation}
            placeholder='Enter city'
            type="text" />
-       
-       </div>
+          </div>
      
        <div className="container">
        <div className="top">
@@ -57,8 +56,7 @@
             <div className="location"> </div>
                    <div className="temp">
              {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
-             
-           </div>
+              </div>
         
            <div className="description">
            {data.weather ? <p>{data.weather[0].main}</p> : null}

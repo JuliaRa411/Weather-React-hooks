@@ -88,8 +88,7 @@ p {
   background: rgba(184, 181, 181, 0.377);
   box-shadow: 7px 7px rgba(109, 106, 106, 0.73);
   border-radius: 12px;
-  
-}
+  }
  
  .location, .temp, .description{
    display: flex;
