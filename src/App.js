@@ -32,7 +32,7 @@ import Gsap from './Gsap';
             }
      > 
       
- 
+  
      <div className="app">
      
        <div className="search">
@@ -54,10 +54,10 @@ import Gsap from './Gsap';
          
           <Gsap/>  
            <div className="location">
-             <p className="name">{data.name}    {/*  DISPLAY COUNTRY {data.sys.country}  ???  */}</p> 
+             <p className="name"> {data.name}, {data.sys.country} </p> 
           
             </div>
-       
+            <div className="location"> </div>
                    <div className="temp">
              {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
              
@@ -75,11 +75,11 @@ import Gsap from './Gsap';
                
             </div>
 
-           {/*   Changing weather icons ???
+           {/* Changing weather icons ???
 
            <img className="city-icon"
            src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"
-           alt={data.weather[0].icon}                
+           alt={icon}                
             />
                */}
              
@@ -118,8 +118,8 @@ import Gsap from './Gsap';
      </div>
  
 </div>
- 
 </div>
+ 
    );
    
 
