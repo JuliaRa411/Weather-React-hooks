@@ -13,7 +13,7 @@
    const [sys,setSys] =useState('')
    const [icon, setIcon]= useState('')
    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=895284fb2d2c50a520ea537456963d9c`
-   const  iconUrl ='https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'
+   const  iconurl ='ttps://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'
      
  const searchLocation = (event) => {
      if (event.key === 'Enter') {
@@ -73,7 +73,7 @@
 
            <div className="weather-icon">
           {/*  Changing weather icons */ }
-  <p> {icon} <img src={iconUrl} alt ="icon"/> </p> 
+   <img src={iconurl} alt ="icon"/>  
           
     </div>
                  
