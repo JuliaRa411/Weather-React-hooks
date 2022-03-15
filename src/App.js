@@ -53,7 +53,7 @@
           <Gsap/>  
           
            <div className="location">
-            <p className="name"> {data.name}, {sys}</p> 
+            <p className="name"> {data.name} {sys}</p> 
           
             </div>
            
@@ -74,7 +74,7 @@
            <div className="weather-icon">
           {/*  Changing weather icons */ }
           
-   <img src={iconUrl} alt =""/>  
+            <img src={iconUrl} alt ="" className='icon'/>  
           
     </div>
                  
