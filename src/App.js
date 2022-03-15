@@ -2,22 +2,26 @@
 
  import React, { useState } from 'react'
  import axios from 'axios'
+ import './App.css';
+ import Gsap from './Gsap';
  
- 
-import './App.css';
-import Gsap from './Gsap';
  
   
- function App() {
+   function App() {
    const [data, setData] = useState([])
    const [location, setLocation] = useState('')
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=895284fb2d2c50a520ea537456963d9c`
- 
-      const searchLocation = (event) => {
+   const [sys,setSys] =useState('')
+   const [icon, setIcon]= useState('')
+   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=895284fb2d2c50a520ea537456963d9c`
+   const  iconUrl ='https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'
+     
+ const searchLocation = (event) => {
      if (event.key === 'Enter') {
        axios.get(url).then((response) => {
          setData(response.data)
          console.log(response.data)
+         setSys(response.data.sys.country)
+         setIcon(response.data.weather[0].icon)
        })
        setLocation('')
      }
@@ -31,11 +35,8 @@ import Gsap from './Gsap';
                   : "App"
             }
      > 
-      
-  
-     <div className="app">
-     
-       <div className="search">
+      <div className="app">
+      <div className="search">
       
          <input
            value={location}
@@ -47,16 +48,14 @@ import Gsap from './Gsap';
        </div>
      
        <div className="container">
-         <div className="top">
-       
-         
-        
-         
+       <div className="top">
+           
           <Gsap/>  
-           <div className="location">
-             <p className="name"> {data.name}    {/* {data.sys.country}  */}</p> 
           
+           <div className="location">
+             <p className="name"> {data.name} {sys}  </p>  
             </div>
+           
             <div className="location"> </div>
                    <div className="temp">
              {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
@@ -75,13 +74,8 @@ import Gsap from './Gsap';
                
             </div>
 
-           {/* Changing weather icons ???
-
-           <img className="city-icon"
-           src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"
-           alt={icon}                
-            />
-               */}
+   {/*  Changing weather icons ???     */ }
+       <img src={iconUrl} alt ="icon"/> 
              
                  
  </div>

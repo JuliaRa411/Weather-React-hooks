@@ -112,7 +112,7 @@ p {
     url("hot.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
-  transition-duration: 0.5s ease;
+    transition-duration: .2s ease;
 }
 main {
   min-height: 100vh;
@@ -124,7 +124,7 @@ main {
   url("cold.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  transition-duration: 0.5s ease;
+  transition-duration: .2s ease;
 }
 
 
