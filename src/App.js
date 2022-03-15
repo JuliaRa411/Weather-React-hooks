@@ -54,7 +54,7 @@ import Gsap from './Gsap';
          
           <Gsap/>  
            <div className="location">
-             <p className="name"> {data.name}, {data.sys.country} </p> 
+             <p className="name"> {data.name}    {/* {data.sys.country}  */}</p> 
           
             </div>
             <div className="location"> </div>
