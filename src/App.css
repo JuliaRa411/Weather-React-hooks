@@ -129,43 +129,7 @@ main {
   transition-duration: .2s ease;
   margin: 0;
 }
-   /*  Footer */  
-.social {
-  margin-top: 30px;
-  display: block;
-  text-align: center;
-  text-decoration: none;
- }
-h5{
-  font-family: 'Playfair Display', serif;
-  font-weight: 100;
-  font-size: 20px;
-}
-.bi{
-  margin: 10px;
-  color: #ebf5ec;
-  margin-top: -20px;
- } 
- .decor{
-   display: flex;
-   justify-content: center;
-   margin-top: 270px;
- }
- .hr{
-  color: #ebf5ec;
-  width: 30%;
-  font-weight: 100;
-  text-shadow: 3px 3px rgba(5, 92, 5, 0.73);
-  
-  
- }
-.creator {
-   display: flex;
-   justify-content: center;
-   text-align: center;
-   color: #ebf5ec;
-   margin-top: 5px;
-    } 
+   
 
 @media all and (max-width: 500px) {
   input {
@@ -201,29 +165,7 @@ font-size:30px;
     min-height: 100vh;
     transition-duration: 0.5s ease;
 }
-.decor{
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-.hr{
- color: #ebf5ec;
- width: 70%;
- font-weight: 100;
- text-shadow: 3px 3px rgba(5, 92, 5, 0.73);
  
- }
- .creator {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: #ebf5ec;
-  
-   } 
-   h5{
-   
-    font-size: 15px;
-  }
 }
 
 
@@ -258,27 +200,5 @@ font-size:35px;
     min-height: 100vh;
     transition-duration: 0.5s ease;
 } 
-.decor{
-  display: flex;
-  justify-content: center;
-  margin-top: 500px;
-}
-.hr{
- color: #ebf5ec;
- width: 70%;
- font-weight: 100;
- text-shadow: 3px 3px rgba(5, 92, 5, 0.73);
  
- }
- .creator {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: #ebf5ec;
-  
-   } 
-   h5{
-   
-    font-size: 15px;
-  }
 }
