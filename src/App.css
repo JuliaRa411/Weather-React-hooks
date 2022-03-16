@@ -149,7 +149,7 @@ h5{
  .decor{
    display: flex;
    justify-content: center;
-   margin-top: 450px;
+   margin-top: 550px;
  }
  .hr{
   color: #ebf5ec;
@@ -165,10 +165,7 @@ h5{
    text-align: center;
    color: #ebf5ec;
    margin-top: 5px;
-   
-   
-   
-  } 
+    } 
 
 @media all and (max-width: 500px) {
   input {
@@ -207,7 +204,7 @@ font-size:30px;
 .decor{
   display: flex;
   justify-content: center;
-  margin-top: 600px;
+  margin-top: 500px;
 }
 .hr{
  color: #ebf5ec;
@@ -221,11 +218,12 @@ font-size:30px;
   justify-content: center;
   text-align: center;
   color: #ebf5ec;
-  margin-top: 300px;
   
-  
-  
- } 
+   } 
+   h5{
+   
+    font-size: 15px;
+  }
 }
 
 
@@ -259,12 +257,28 @@ font-size:35px;
     url("cold-small.jpg") ;
     min-height: 100vh;
     transition-duration: 0.5s ease;
-}
+} 
 .decor{
   display: flex;
   justify-content: center;
-  
-  margin-bottom: -300px;
+  margin-top: 500px;
 }
+.hr{
+ color: #ebf5ec;
+ width: 70%;
+ font-weight: 100;
+ text-shadow: 3px 3px rgba(5, 92, 5, 0.73);
  
+ }
+ .creator {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ebf5ec;
+  
+   } 
+   h5{
+   
+    font-size: 15px;
+  }
 }
