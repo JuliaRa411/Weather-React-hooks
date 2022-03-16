@@ -25,7 +25,8 @@
      }
     }
    return (
-    <div className={
+// bg change//
+        <div className={   
       typeof data.main != "undefined"
                 ? data.main.temp > 10
                   ? "App hot"
