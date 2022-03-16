@@ -149,7 +149,7 @@ h5{
  .decor{
    display: flex;
    justify-content: center;
-   margin-top: 450px;
+   margin-top: 550px;
  }
  .hr{
   color: #ebf5ec;
@@ -204,7 +204,7 @@ font-size:30px;
 .decor{
   display: flex;
   justify-content: center;
-  margin-top: 400px;
+  margin-top: 450px;
 }
 .hr{
  color: #ebf5ec;
