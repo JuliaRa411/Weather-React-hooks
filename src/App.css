@@ -204,7 +204,28 @@ font-size:30px;
     min-height: 100vh;
     transition-duration: 0.5s ease;
 }
+.decor{
+  display: flex;
+  justify-content: center;
+  margin-top: 600px;
+}
+.hr{
+ color: #ebf5ec;
+ width: 70%;
+ font-weight: 100;
+ text-shadow: 3px 3px rgba(5, 92, 5, 0.73);
+ 
+ }
+ .creator {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ebf5ec;
+  margin-top: 300px;
   
+  
+  
+ } 
 }
 
 
@@ -239,5 +260,11 @@ font-size:35px;
     min-height: 100vh;
     transition-duration: 0.5s ease;
 }
+.decor{
+  display: flex;
+  justify-content: center;
   
+  margin-bottom: -300px;
+}
+ 
 }
